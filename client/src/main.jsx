@@ -29,11 +29,7 @@ function Navbar() {
 }
 
 function UserList() {
-    const users = [
-        { id: 1, name: 'Anna', age: 25 },
-        { id: 2, name: 'Björn', age: 30 },
-        { id: 3, name: 'Cecilia', age: 22 }
-    ];
+    const { users } = useContext(GlobalContext)
 
     return <>
         <div>
