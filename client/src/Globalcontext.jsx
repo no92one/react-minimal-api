@@ -4,7 +4,6 @@ const GlobalContext = createContext()
 
 function GlobalProvider({children}) {
     const [data, setData] = useState("Data from context");
-    const [data2, setData2] = useState("Data2");
     const [users, setUsers] =useState([
         { id: 1, name: 'Anna', age: 25 },
         { id: 2, name: 'Björn', age: 30 },
@@ -13,7 +12,6 @@ function GlobalProvider({children}) {
 
     return <GlobalContext.Provider value={{
         data,
-        data2,
         users
     }}>
         {children}

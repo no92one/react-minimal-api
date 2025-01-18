@@ -24,7 +24,6 @@ function Navbar() {
     const {data, data2} = useContext(GlobalContext)
     return <nav>
         <h1>{data}</h1>
-        <h2>{data2}</h2>
     </nav>
 }
 
